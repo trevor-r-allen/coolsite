@@ -2,11 +2,15 @@
   --primary-color: rgb(0, 80, 200);
   --primary-color-light: rgb(120, 175, 255);
   --text-light: rgb(245, 245, 255);
+  --footer-height: 5em;
+}
+
+html{
+  min-height: 100%;
+  position: relative;
 }
 
 body{
-  min-height: 100%;
-  position: relative;
   margin: 0%;
 }
 
@@ -22,7 +26,7 @@ header{
 main{
   margin: 0em .5em 0em 15em;
   justify-content: space-around;
-  padding-bottom: 5em;
+  padding-bottom: var(--footer-height);
 }
 @media (max-width:750px){
   main{
@@ -33,9 +37,10 @@ main{
 footer{
   background-color: var(--primary-color);
   margin: 0em;
-  height: 5em;
+  height: var(--footer-height);
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
 }
 
