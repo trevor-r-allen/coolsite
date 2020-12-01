@@ -57,12 +57,25 @@ p{
   padding: 0;
 }
 
+main h2{
+  margin: .5em 0em;
+}
+
+
+
 .center-bar{
   background-color: var(--primary-color-light);
   height: 1em;
 }
 .side-bar{
   height: 1em;
+}
+.center-title{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.side-title{
+  font-size: medium;
 }
 .center-content{
   width: 65%;
